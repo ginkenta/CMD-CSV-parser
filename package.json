@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc && mkdir categories | echo 'folder already exist'",
-    "start:dev": "tsc --watch",
+    "start:dev": "mkdir categories | echo 'folder already exist' && tsc --watch",
     "parser": "node ./dist/index.js"
   },
   "author": "",
