@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc ./src/index.ts",
+    "build": "tsc && mkdir categories | echo 'folder already exist'",
     "start:dev": "tsc --watch",
     "parser": "node ./dist/index.js"
   },
