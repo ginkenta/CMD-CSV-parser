@@ -8,8 +8,8 @@ const program = new Command();
 //   "https://pics.ebaystatic.com/aw/pics/catchanges/US_NewStructure(Oct2019).csv";
 
 program
-  .option("-d, --download <type>", "link to download csv file")
-  .option("-t, --transform <type>", "transform specific file to json")
+  .option("-d, --download <url>", "link to download csv file")
+  .option("-t, --transform <name>", "transform specific file to json")
   .option("-l, --list", "list of all downloaded files")
   .configureOutput({
     // Visibly override write routines as example!
