@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc ./src/index.ts --watch"
+    "tsc": "tsc ./src/index.ts --watch",
+    "parser": "node ./src/index.js"
   },
   "author": "",
   "license": "ISC",
