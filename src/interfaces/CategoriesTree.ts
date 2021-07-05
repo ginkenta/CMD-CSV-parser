@@ -3,3 +3,5 @@ export interface CategoriesTree {
   value: string; // category ID
   subSchemas?: CategoriesTree[]; // child categories
 }
+
+export type Result = CategoriesTree[];

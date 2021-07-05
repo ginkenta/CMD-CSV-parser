@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import csv from "csv-parse";
 import fetch from "node-fetch";
-import { CategoriesTree } from "./interfaces/CategoriesTree";
+import { CategoriesTree, Result } from "./interfaces/CategoriesTree";
 
 // Example url
 // const url =
@@ -57,7 +57,7 @@ class Parser {
       })
       .on("end", () => {
         output.splice(0, 3);
-        const outputJsonArray: CategoriesTree[] = [];
+        const outputJsonArray: Result = [];
 
         for (const arrOfElements of output) {
           const [name, value] = arrOfElements;
